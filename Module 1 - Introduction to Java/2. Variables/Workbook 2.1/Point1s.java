@@ -1,4 +1,4 @@
-public class Points {
+public class Point1s {
     public static void main(String[] args) {
         
         // Instructions for this workbook are on Learn the Part (see the Udemy Video: Workbook 2.1 to access the link).
@@ -23,6 +23,7 @@ public class Points {
         
         // Compare your result to what's on Learn the Part.
         System.out.println(points);
+
     }
 }
 
