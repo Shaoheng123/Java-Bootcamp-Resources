@@ -1,4 +1,4 @@
-public class Biography {
+public class Biographysol {
     public static void main(String[] args) {
 
         String name = "Sam";
