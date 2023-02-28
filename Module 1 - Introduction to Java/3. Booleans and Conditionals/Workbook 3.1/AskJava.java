@@ -8,30 +8,34 @@ public class AskJava {
         double price = 2.50;
 
         System.out.println("Me: Hi Java, do I have enough change to buy chips?");
-        System.out.println("Java: " + ("<compare change and price>") + "\n");
+        boolean amount = change == price;
+        System.out.println("Java: " +amount+ "\n");
                                         //comparison here
         int capacity = 12;
         int people = 15;
         System.out.println("Me: Hi Java, can the elevator hold everyone?");
-        System.out.println("Java: " + ("<compare capacity and people>") + "\n");
-                                        //comparison here
+        boolean number = capacity == people;  
+        System.out.println("Java: " + number + "\n");
+                                      //comparison here
 
         String request = "PS5";
         String purchase = "Toy car";
         System.out.println("Me: Hi Java, will my friend be happy?");
-        System.out.println("Java: " + "<compare request and purchase>" + "\n");
+        System.out.println("Java: " + request.equals(purchase) + "\n");
                                         //comparison here
 
         int space = 9;
         int guests = 8;
         System.out.println("Me: Hi Java, can everyone attend my dinner party?");
-        System.out.println("Java: " + "<compare space and guests>" + "\n");
+        boolean able = space >= guests;
+        System.out.println("Java: " + able + "\n");
                                         //comparison here
 
         int yourVotes = 24;
         int competitorVotes = 43;
         System.out.println("Me: Hi Java, will I win the election?");
-        System.out.println("Java: " + "<compare your votes and competitor>" + "\n");
+        boolean win = yourVotes <= competitorVotes;
+        System.out.println("Java: " + win+ "\n");
                                         //comparison here
 
 
