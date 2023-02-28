@@ -5,10 +5,18 @@ public class WeatherNetwork {
 
         
         int temp = 25;  
-
+         temp = 8;  
+         temp = -5;  
         String forecast = "";
 
         //IF - ELSE IF - ELSE STATEMENTS HERE!
+        if (temp <= -1) {
+            forecast="The forecast is Freezing! Stay home!";
+        } else if (temp <= 10) {
+            forecast="The forecast is Chilly. Wear a Coat!";
+        } else {
+            forecast="It's warm. Go Outside";
+        }
         
         
         System.out.println(forecast);
