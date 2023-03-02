@@ -6,7 +6,7 @@ public class Main {
         
         /************************** Hashcode ************************/
         Contact contact = new Contact("Alice", 30);
-        Contact contactCopy = contact;
+        Contact contactCopy = new Contact(contact);
 
         System.out.println("First Hashcode: " + contact.hashCode());
         System.out.println("Second Hashcode: " + contactCopy.hashCode());

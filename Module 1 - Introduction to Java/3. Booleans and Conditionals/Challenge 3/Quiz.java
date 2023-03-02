@@ -12,34 +12,39 @@ public class Quiz {
         System.out.println("\ta) China\n\tb) Ireland\n\tc) Brazil\n\td) Italy\n");
         //store answer 1
         String ans1 = scan.nextLine();
-
+        ans1 = ans1.toLowerCase();
         System.out.println("\n2. Which planet is the hottest?");
         System.out.println("\ta) Venus\n\tb) Saturn\n\tc) Mercury\n\td) Mars\n");
         //store answer 2
         String ans2 = scan.nextLine();
-
+        
         System.out.println("\n3. What is the rarest blood type?");
         System.out.println("\ta) O\n\tb) A\n\tc) B\n\td) AB-Negative\n");
+        
         //store answer 3
+
         String ans3 = scan.nextLine();
         System.out.println("\n4. Which one of these characters is friends with Harry Potter?");
         System.out.println("\ta) Ron Weasley\n\tb) Hermione Granger\n\tc) Draco Malfoy\n");
         //store answer 4
         String ans4 = scan.nextLine();
         int score = 0;
+        ans1 = ans1.toLowerCase();
 
-
+        ans2 = ans2.toLowerCase();
+        ans3 = ans3.toLowerCase();
+        ans4 = ans4.toLowerCase();
         //Task 2: Check each answer - For each correct answer, add 5 points to the score. 
-        if (ans1 == "c") {
+        if (ans1.equals("c")){
             score += 5;
         }
-        if (ans2 == "a") {
+        if (ans2.equals("a")) {
             score += 5;
         }
-        if (ans3 == "d") {
+        if (ans3.equals("d")) {
             score += 5;
         }
-        if (ans4 == "a"||ans4=="b") {
+        if (ans4.equals("a")||ans4.equals("b")) {
             score += 5;
         }
         
