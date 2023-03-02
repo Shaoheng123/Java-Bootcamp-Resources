@@ -10,6 +10,32 @@ public class Calendar {
         System.out.println("Hmm, let me check my calendar.");
         
         //Check 'calendar' here:        
+        switch (day){
+            case "Monday":
+            System.out.println("Can't");
+             break;
+         case "Tuesday":
+         System.out.println("Busy");
+            break;
+        case "Wednesday":
+            System.out.println("Let's do it!");
+                break;
+        case "Thursday":
+            System.out.println("Yeah!");
+                break;
+            case "Friday":
+            System.out.println("Perhaps.");
+            break;
+        case "Saturday":
+            System.out.println("Sure!");
+        case "Sunday":
+            System.out.println("Certainly");
+        default:
+        System.out.println("Invalid day entered");
+
+
+
+        }
         
 
     }
