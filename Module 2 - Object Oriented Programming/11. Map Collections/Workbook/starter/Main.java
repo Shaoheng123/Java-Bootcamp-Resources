@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         
         Team bulls = new Team("Chicago Bulls");
+        // String teamname = bulls.getName();
         bulls.setPlayer("SHOOTING_GUARD", "Michael Jordan");
         bulls.setPlayer("SMALL_FORWARD", "Scottie Pippen");
         bulls.setPlayer("POWER_FORWARD", "Dennis Rodman");
