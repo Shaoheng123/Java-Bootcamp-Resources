@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
+
 
 public class Team {
 
@@ -13,28 +13,28 @@ public class Team {
         this.name = name;
         //set players= new Hashmap
         this.players = new HashMap<>();
-        Team.setName("sh");
+        // Team.setName("sh");
     }
     
     public String getName() {
         // TODO
-        return null;
+        return this.name;
     }
 
     public void setName(String name) {
         // TODO
-        
+        this.name = name;
     }
 
     public String getPlayer(String position) {
         // TODO
-        players.put("String", "String");
-        return null;
+        return players.get(position);
+        // return null;
     }
 
     public void setPlayer(String position, String player) {
         // TODO
-        players.put("String", "String");
+        players.put(position,player);
     }    
 
     
