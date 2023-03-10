@@ -1,4 +1,4 @@
-public class Grocer {
+public class Grocer1 {
     public static void main(String[] args) {
         
         //each index is an aisle
