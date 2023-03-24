@@ -102,6 +102,7 @@ public class Hangman {
             if (checkGuess(word, guess)) {
                 updatePlaceholders(word, placeholders, guess);
             } else {
+                //interesting
                 missedGuesses[misses] = guess;
                 misses++;
             }

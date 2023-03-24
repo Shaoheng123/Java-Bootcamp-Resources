@@ -1,4 +1,4 @@
-public class Person {
+public class Person1 {
     
     private String name;
     private String nationality;
@@ -6,23 +6,15 @@ public class Person {
     private String[] passport;
     private int seatNumber;
 
-    public Person(String name, String nationality, String dateOfBirth, int seatNumber) {
+    public Person1(String name, String nationality, String dateOfBirth, int seatNumber) {
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
     }
 
-    public Person(Person source) {
-        this.name = source.name;
-        this.nationality = source.nationality;
-        this.dateOfBirth = source.dateOfBirth;
-        this.seatNumber = source.seatNumber;
-    }
-    
-
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -30,7 +22,7 @@ public class Person {
     }
 
     public String getNationality() {
-        return nationality;
+        return this.nationality;
     }
 
     public void setNationality(String nationality) {
@@ -38,20 +30,27 @@ public class Person {
     }
 
     public String getDateOfBirth() {
-        return dateOfBirth;
+        return this.dateOfBirth;
     }
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
+    public String[] getPassport() {
+        return this.passport;
+    }
+
+    public void setPassport(String[] passport) {
+        this.passport = passport;
+    }
+
     public int getSeatNumber() {
-        return seatNumber;
+        return this.seatNumber;
     }
 
     public void setSeatNumber(int seatNumber) {
         this.seatNumber = seatNumber;
     }
-
  
 }

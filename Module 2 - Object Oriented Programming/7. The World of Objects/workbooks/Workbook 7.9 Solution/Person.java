@@ -16,7 +16,7 @@ public class Person {
         this.passport = new String[3];
     }
  
-    public Person(Person source) {
+    public Person(Person2 source) {
         this.name = source.name;
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;

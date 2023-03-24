@@ -1,4 +1,4 @@
-public class Person {
+public class Person2 {
     
     private String name;
     private String nationality;
@@ -6,19 +6,20 @@ public class Person {
     private String[] passport;
     private int seatNumber;
 
-    public Person(String name, String nationality, String dateOfBirth, int seatNumber) {
+    public Person2(String name, String nationality, String dateOfBirth, int seatNumber) {
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
     }
 
-    public Person(Person source) {
+    public Person2(Person2 source) {
         this.name = source.name;
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;
         this.seatNumber = source.seatNumber;
     }
+    
 
     public String getName() {
         return name;
@@ -52,7 +53,19 @@ public class Person {
         this.seatNumber = seatNumber;
     }
 
-    // Person person = new Person("Rayan ")
+    public boolean applyPassport() {
+        int number = (int) (Math.random() * 2);
+        return number == 1;
+
+    }
+
+    public int chooseSeat() {
+        seatNumber = (int) (Math.random() * 11 + 1);
+        return seatNumber;
+
+    }
+    
+
 
  
 }
