@@ -18,5 +18,9 @@ public class Checking extends Account {
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
+    @Override
+    public Account clone() {
+        return new Checking(super.getId(), this.balance);
+    }
 
 }
