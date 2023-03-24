@@ -8,6 +8,9 @@
         if (person.applyPassport() == true) {
             person.setPassport();
         }
+        System.out.println("Heloo");
+        System.out.println(person.toString());
+        
 
         
     }

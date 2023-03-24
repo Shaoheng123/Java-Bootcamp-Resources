@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PizzaDelivery {
@@ -16,11 +17,16 @@ public class PizzaDelivery {
         String[] toppings = new String[numToppings]; // Length of array equals what the user inputs.
         
         // Task 1 here
-        
-        System.out.println("\nThank you! Here are the toppings you ordered");
+        for (int i = 0; i < toppings.length; i++) {
+            System.out.print("\n"+i+".");
+            toppings[i] = scan.nextLine();
+        }
+        System.out.print("\nThank you! Here are the toppings you ordered");
         
         // Task 2 here
-        
+        String topping= Arrays.toString(toppings);
+        System.out.println(topping);
+        System.out.println();
         System.out.println("\nPress anything to confirm your order.");
         scan.nextLine();
         System.out.println("Great, a driver is on the way!");
