@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
+package Module 2 - Object Oriented Programming.12. Package and Import.starter.model.Game.java;
+// C:\Users\shaoheng\Documents\GitHub\Java-Bootcamp-Resources\Module 2 - Object Oriented Programming\12. Package and Import\starter\model\Game.java
 public class Game {
 
     private String arena;

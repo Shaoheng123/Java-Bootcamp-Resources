@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-
+package model;
 public class Team {
 
     private String name;

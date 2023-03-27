@@ -5,7 +5,8 @@ public class Main {
 
         City paris = new City("Paris", 2161000);
         City copy = paris;
-
+        City paris2= paris;
+        System.out.println(paris.equals(paris2));
         System.out.println(paris.equals(copy));
         copy.setPopulation(2059003);
         paris.setPopulation(3129003);
@@ -19,5 +20,8 @@ public class Main {
         
         System.out.println(cities.contains(paris));
     }
+
+    
+
 
 }

@@ -2,8 +2,10 @@ public class User {
 
     private String firstName;
     private String lastName;
+    public static int count = 0;
 
     public User(String firstName, String lastName) {
+        count++;
         this.firstName = firstName;
         this.lastName = lastName;
     }

@@ -17,22 +17,22 @@ public class Main {
 
         /******************FETCHING DATA******************/
 
-        System.out.println("\nFETCHING DATA\n");
+        // System.out.println("\nFETCHING DATA\n");
 
-        long start = System.currentTimeMillis();
-		linkedList.get(4_500_000);
-        System.out.println("LinkedList: " + (System.currentTimeMillis() - start) + "ms");
+        // long start = System.currentTimeMillis();
+		// linkedList.get(4_500_000);
+        // System.out.println("LinkedList: " + (System.currentTimeMillis() - start) + "ms");
 
-        start = System.currentTimeMillis();
-		arrayList.get(4_500_000);
-        System.out.println("ArrayList: " + (System.currentTimeMillis() - start) + "ms");
+        // start = System.currentTimeMillis();
+		// arrayList.get(4_500_000);
+        // System.out.println("ArrayList: " + (System.currentTimeMillis() - start) + "ms");
         
 
         /******************FIRST / LAST INDEX******************/
 
         // System.out.println("\nFIRST / LAST INDEX\n");
 
-        // start = System.currentTimeMillis();
+        // long start = System.currentTimeMillis();
 		// linkedList.get(0);
         // linkedList.get(linkedList.size() - 1);
         // System.out.println("LinkedList: " + (System.currentTimeMillis() - start) + "ms");
@@ -47,7 +47,7 @@ public class Main {
 
         // System.out.println("\nINSERTION FROM MIDDLE\n");
 
-        // start = System.currentTimeMillis();
+        // long start = System.currentTimeMillis();
         // linkedList.add(5, 121); // insert 121 at index 5
         // System.out.println("LinkedList: " + (System.currentTimeMillis() - start) + "ms");
 
