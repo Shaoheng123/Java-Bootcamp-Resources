@@ -22,7 +22,12 @@ public class Movie {
 
     public void setName(String name) {
         // TODO
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Please Enter a Name");
+        }
         this.name = name;
+        
+        
     }
     
     public String getFormat() {
@@ -31,6 +36,9 @@ public class Movie {
 
     public void setFormat(String format) {
         // TODO
+        if (format == null || format.isBlank()) {
+            throw new IllegalArgumentException("Please Enter a format");
+        }
         this.format = format;
     }
 
@@ -40,7 +48,12 @@ public class Movie {
 
     public void setRating(double rating) {
         // TODO
-        this.rating = rating;
+        if (rating <10 || rating>10) {
+            throw new IllegalArgumentException("rating should not be less than 0 or greater than 10");}
+        else{
+            this.rating = rating;
+        }
+       
     }
 
     public String toString() {

@@ -42,6 +42,10 @@ public class Main {
             // 1. Anticipate the user not entering an integer.
 
             int choice = scanner.nextInt();
+            if (incorrectChoice(choice) == true) {
+                throw new 
+            }
+
 
             // 2. Anticipate the choice being incorrect.
             return choice;
@@ -50,7 +54,8 @@ public class Main {
 
     public static boolean incorrectChoice(int choice) {
         // TODO
-        return false;
+        Boolean choice1 = ((choice < 0||choice>9)) ? true : false;
+        return choice1;
     }
 
     public static double promptForRating(Scanner scanner, String name) {
@@ -69,6 +74,9 @@ public class Main {
 
     public static boolean incorrectRating(double rating) {
         // TODO
+        if (rating < 0 || rating > 10) {
+            return true;
+        }
         return false;
     }
 
